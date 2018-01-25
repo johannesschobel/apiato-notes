@@ -5,13 +5,13 @@ namespace App\Containers\Note\Tasks;
 use App\Containers\Note\Exceptions\NotAllowedToAccessEntityOfNoteException;
 use App\Ship\Parents\Tasks\Task;
 
+/**
+ * Class HasAccessToUserNoteTask
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class HasAccessToUserNoteTask extends Task
 {
-
-    public function __construct()
-    {
-        // ..
-    }
 
     /**
      * @param $user

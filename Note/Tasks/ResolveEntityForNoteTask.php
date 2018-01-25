@@ -7,13 +7,13 @@ use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
 use Illuminate\Support\Facades\Config;
 
+/**
+ * Class ResolveEntityForNoteTask
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class ResolveEntityForNoteTask extends Task
 {
-
-    public function __construct()
-    {
-        // ..
-    }
 
     /**
      * @param $type the type of the entity you want to resolve

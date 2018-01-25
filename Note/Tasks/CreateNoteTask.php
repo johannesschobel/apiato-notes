@@ -7,16 +7,37 @@ use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;
 
+/**
+ * Class CreateNoteTask
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class CreateNoteTask extends Task
 {
 
+    /**
+     * @var NoteRepository
+     */
     private $repository;
 
+    /**
+     * CreateNoteTask constructor.
+     *
+     * @param NoteRepository $repository
+     */
     public function __construct(NoteRepository $repository)
     {
         $this->repository = $repository;
     }
 
+    /**
+     * @param array $data
+     * @param       $author
+     * @param       $model
+     *
+     * @return mixed
+     * @throws CreateResourceFailedException
+     */
     public function run(array $data, $author, $model)
     {
         $data['is_completed'] = false;

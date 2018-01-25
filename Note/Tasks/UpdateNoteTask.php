@@ -9,16 +9,36 @@ use App\Ship\Parents\Tasks\Task;
 use Carbon\Carbon;
 use Exception;
 
+/**
+ * Class UpdateNoteTask
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class UpdateNoteTask extends Task
 {
 
+    /**
+     * @var NoteRepository
+     */
     private $repository;
 
+    /**
+     * UpdateNoteTask constructor.
+     *
+     * @param NoteRepository $repository
+     */
     public function __construct(NoteRepository $repository)
     {
         $this->repository = $repository;
     }
 
+    /**
+     * @param Note  $object
+     * @param array $data
+     *
+     * @return mixed
+     * @throws UpdateResourceFailedException
+     */
     public function run(Note $object, array $data)
     {
         // check if the key exists

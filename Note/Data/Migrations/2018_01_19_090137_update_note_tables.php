@@ -4,6 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Config;
 
+/**
+ * Class UpdateNoteTables
+ *
+ * @author Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class UpdateNoteTables extends Migration
 {
 

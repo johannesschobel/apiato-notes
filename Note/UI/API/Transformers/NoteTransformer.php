@@ -6,13 +6,17 @@ use App\Containers\Note\Models\Note;
 use App\Containers\User\UI\API\Transformers\UserTransformer;
 use App\Ship\Parents\Transformers\Transformer;
 
+/**
+ * Class NoteTransformer
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 class NoteTransformer extends Transformer
 {
     /**
      * @var  array
      */
     protected $defaultIncludes = [
-
     ];
 
     /**

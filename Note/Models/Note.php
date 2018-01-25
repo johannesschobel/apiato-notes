@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Note extends PackageNote
 {
+    // we add the traits here because it does not directly extend the Ship/Parents/Model class
     use HashIdTrait;
     use HasResourceKeyTrait;
     use SoftDeletes;

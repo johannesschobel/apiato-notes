@@ -4,10 +4,14 @@ namespace App\Containers\Note\Traits;
 
 use App\Containers\Note\UI\API\Transformers\NoteTransformer;
 
+/**
+ * Trait EntityHasNotesTransformerTrait
+ *
+ * @author  Johannes Schobel <johannes.schobel@googlemail.com>
+ */
 trait EntityHasNotesTransformerTrait
 {
     /**
-     *
      * @param $entity
      *
      * @return array
