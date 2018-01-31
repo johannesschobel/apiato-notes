@@ -2,6 +2,6 @@
   "name": "apiato/note",
   "description": "Note Container for apiato.",
   "require": {
-    "arcanedev/laravel-notes" : "^2"
+    "arcanedev/laravel-notes" : "^2.0"
   }
 }
